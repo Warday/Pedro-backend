@@ -29,20 +29,20 @@ public class Publications {
     private String place;
     private String title;
     private int year;
-    private String DOI;
+    private String doi;
 
     public Publications() {
     }
 
-    public Publications(String place, String title,int year, String DOI) {
+    public Publications(String place, String title,int year, String doi) {
         this.place = place;
         this.title = title;
         this.year = year;
-        this.DOI = DOI;
+        this.doi = doi;
     }
 
     @Override
     public String toString() {
-        return "Publications{" + "id=" + id + ", place=" + place + ", title=" + title + ", year=" + year+ ", DOI=" + DOI +'}';
+        return "Publications{" + "id=" + id + ", place=" + place + ", title=" + title + ", year=" + year+ ", DOI=" + doi +'}';
     }
 }

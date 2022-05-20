@@ -33,18 +33,20 @@ public class Education {
     private float score;
     private int start;
     private int end;
+    private String url;
     private String img;
 
     public Education() {
     }
 
-    public Education(String school, String title,String career, float score,int start,int end, String img) {
+    public Education(String school, String title,String career, float score,int start,int end, String img, String url) {
         this.school = school;
         this.title = title;
         this.career = career;
         this.score = score;
         this.start = start;
         this.end = end;
+        this.url = url;
         this.img = img;
     }
 
