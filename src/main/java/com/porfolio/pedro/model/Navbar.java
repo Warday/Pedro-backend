@@ -20,31 +20,31 @@ import lombok.Setter;
 
 @Getter @Setter
 @Entity
-public class Publications {
+public class Navbar {
+    
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     
     @Basic
-    private String place;
+    private String icon;
     private String title;
-    private int year;
-    private String doi;
-    private String doiurl;
+    private String facebook;
+    private String instagram;
+   
 
-    public Publications() {
+    public Navbar() {
     }
 
-    public Publications(String place, String title,int year, String doi, String doiurl) {
-        this.place = place;
+    public Navbar( String icon, String title, String facebook, String instagram) {
+        this.icon = icon;
         this.title = title;
-        this.year = year;
-        this.doi = doi;
-        this.doi = doiurl;
+        this.facebook = facebook;
+        this.instagram = instagram;
     }
 
     @Override
     public String toString() {
-        return "Publications{" + "id=" + id + ", place=" + place + ", title=" + title + ", year=" + year+ ", DOI=" + doi +'}';
+        return "Yo{" + "id=" + id + ", title=" + title + ", facebook=" + facebook + ", instagram=" + instagram + '}';
     }
 }

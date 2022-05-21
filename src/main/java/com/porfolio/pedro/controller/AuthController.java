@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package com.porfolio.pedro.controller;
+
 import com.porfolio.pedro.model.User;
 import com.porfolio.pedro.model.dto.UserDto;
 import com.porfolio.pedro.service.AuthService;
@@ -24,9 +25,9 @@ public class AuthController {
     public boolean login(@RequestBody UserDto userDto) {
         return service.isUserEnabled(userDto);
     }
-    
+    /**
     @PostMapping("/register")
     public void register(@RequestBody User user) throws Exception {
         service.createUser(user);
-    }
+    }*/
 }

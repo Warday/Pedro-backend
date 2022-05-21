@@ -31,15 +31,15 @@ public class Experience {
     private String level;
     private String worktime;
     private String place;
-    private int start;
-    private int end;
+    private String start;
+    private String end;
     private String diff;
     private String img;
     
     public Experience() {
     }
 
-    public Experience(String school, String title,String career, float score,int start,int end,String diff, String img) {
+    public Experience(String school, String title,String career, float score,String start,String end,String diff, String img) {
         this.company = company;
         this.level = level;
         this.worktime = worktime;
