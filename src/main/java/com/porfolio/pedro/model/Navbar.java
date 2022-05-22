@@ -29,6 +29,7 @@ public class Navbar {
     @Basic
     private String icon;
     private String title;
+    private String hashtag;
     private String facebook;
     private String instagram;
    
@@ -36,11 +37,13 @@ public class Navbar {
     public Navbar() {
     }
 
-    public Navbar( String icon, String title, String facebook, String instagram) {
+    public Navbar( String icon, String title, String facebook, String instagram, String hashtag) {
         this.icon = icon;
         this.title = title;
+        this.hashtag=hashtag;
         this.facebook = facebook;
         this.instagram = instagram;
+        
     }
 
     @Override

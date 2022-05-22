@@ -27,14 +27,18 @@ public class Projects {
     
     @Basic
     private String name;
+    private int year;
     private String description;
+    private String link;
 
     public Projects() {
     }
 
-    public Projects(String name, String description,String career, float score,int start,int end, String img) {
+    public Projects(String name, String description,int year,String link) {
         this.name = name;
         this.description = description;
+        this.year = year;
+        this.link = link;
     }
 
     @Override
